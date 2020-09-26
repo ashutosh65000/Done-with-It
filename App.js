@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableHighlight } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text numberOfLines={2} selectable={true} selectionColor={"#99cc77"}>
+        Hello there. This is a very long text. I want to make this text very very very long so that it takes atleast two lines.
+      </Text>
       <StatusBar style="auto" />
     </View>
   );
