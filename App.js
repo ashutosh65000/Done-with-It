@@ -15,17 +15,20 @@ export default function App() {
           require("./assets/favicon.png")
         }
       />
-      {/* network images */}
-      <Image
-        fadeDuration={3000}
-        source={
-          {
-            width: 200,
-            height: 300,
-            uri: "https://2.bp.blogspot.com/-cIjErjDVzYg/XMXsHNqcjCI/AAAAAAAAE8k/q1J6yx82Q8EEbGk2XbKIbzwHnsg-z4XBgCEwYBhgL/s1600/Karishma%2BSharma%2B-%2Bhot%2Bindian%2Bactress%2B-%2Bbra%2B-%2Bragini%2Bmms%2Breturns%2B%252820%2529.jpg"
+      <TouchableHighlight onPress={()=>{console.log("Pressed")}}>
+        {/* network images */}
+        <Image
+          fadeDuration={3000}
+          source={
+            {
+              width: 200,
+              height: 300,
+              uri: "https://2.bp.blogspot.com/-cIjErjDVzYg/XMXsHNqcjCI/AAAAAAAAE8k/q1J6yx82Q8EEbGk2XbKIbzwHnsg-z4XBgCEwYBhgL/s1600/Karishma%2BSharma%2B-%2Bhot%2Bindian%2Bactress%2B-%2Bbra%2B-%2Bragini%2Bmms%2Breturns%2B%252820%2529.jpg"
+            }
           }
-        }
-      />
+        />
+      </TouchableHighlight>
+
       <StatusBar style="auto" />
     </View>
   );
