@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableHighlight, Button } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableHighlight, Button, Alert } from 'react-native';
 
 export default function App() {
   return (
@@ -10,10 +10,18 @@ export default function App() {
       </Text>
       <Button
         color="magenta"
-        title="Karishma Sharma"
-        onPress={() => { console.log("Button Pressed") }}
+        title="Click Me"
+        onPress={() => 
+          Alert.alert(
+            "Actress Name",
+            "My name is Karishma Sharma.",
+            [
+              {text:"Ok", onPress:()=> console.log("Ok pressed")},
+              {text:"Cancel", onPress:()=> console.log("Cancel pressed")}
+            ])
+          }
       />
-      <TouchableHighlight onPress={() => { console.log("Image Pressed") }}>
+      <TouchableHighlight onPress={() => console.log("Image Pressed")}>
         {/* network images */}
         <Image
           fadeDuration={3000}
