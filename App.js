@@ -10,26 +10,39 @@ export default function App() {
         flex: 1,
         flexDirection: "row", //horizontal
         justifyContent: "center", //main
-        alignItems: "center" //secondary
+        alignItems: "center", //secondary
+        flexWrap: "wrap",
+        alignContent: "center"//if flexWrap is there then only it has effect else not
       }}>
       <View
         style={{
           backgroundColor: "gold",
           width: 100,
-          height: 300,
-          alignSelf: "flex-start"
+          height: 100
         }} />
       <View
         style={{
           backgroundColor: "silver",
           width: 100,
-          height: 200
+          height: 100
         }} />
       <View
         style={{
           backgroundColor: "tomato",
           width: 100,
-          height: 100
+          height: 100,
+        }} />
+      <View
+        style={{
+          backgroundColor: "grey",
+          width: 100,
+          height: 100,
+        }} />
+      <View
+        style={{
+          backgroundColor: "magenta",
+          width: 100,
+          height: 100,
         }} />
     </View>
   )
