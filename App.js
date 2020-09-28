@@ -1,29 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableHighlight, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableHighlight, Button, Alert, SafeAreaView } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text numberOfLines={2} selectable={true} selectionColor={"#99cc77"}>
+    <SafeAreaView style={styles.container}>
+      {/* <Text numberOfLines={2} selectable={true} selectionColor={"#99cc77"}>
         Hello there. This is a very long text. I want to make this text very very very long so that it takes atleast two lines.
-      </Text>
+      </Text> */}
       <Button
-        color="magenta"
         title="Click Me"
-        onPress={() => 
-          Alert.alert(
-            "Actress Name",
-            "My name is Karishma Sharma.",
-            [
-              {text:"Ok", onPress:()=> console.log("Ok pressed")},
-              {text:"Cancel", onPress:()=> console.log("Cancel pressed")}
-            ])
-          }
+        onPress={() =>
+          Alert.prompt()
+        }
       />
-      <TouchableHighlight onPress={() => console.log("Image Pressed")}>
-        {/* network images */}
-        <Image
+      {/* <TouchableHighlight onPress={() => console.log("Image Pressed")}> */}
+      {/* network images */}
+      {/* <Image
           fadeDuration={3000}
           source={
             {
@@ -32,12 +25,10 @@ export default function App() {
               uri: "https://2.bp.blogspot.com/-cIjErjDVzYg/XMXsHNqcjCI/AAAAAAAAE8k/q1J6yx82Q8EEbGk2XbKIbzwHnsg-z4XBgCEwYBhgL/s1600/Karishma%2BSharma%2B-%2Bhot%2Bindian%2Bactress%2B-%2Bbra%2B-%2Bragini%2Bmms%2Breturns%2B%252820%2529.jpg"
             }
           }
-        />
-      </TouchableHighlight>
-
-
-      <StatusBar style="auto" />
-    </View>
+        /> */}
+      {/* </TouchableHighlight> */}
+      {/* <StatusBar style="auto" /> */}
+    </SafeAreaView>
   );
 }
 
