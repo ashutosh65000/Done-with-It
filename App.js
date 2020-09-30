@@ -20,11 +20,12 @@ export default function App() {
           backgroundColor: "red",
           width: 100,
           height: 100,
-          borderBottomColor: "green",
-          borderRadius: 50,
-          borderWidth: 10,
-          borderTopStartRadius: 20,
-          borderTopRightRadius: 20,
+          // for IOS three properties
+          shadowColor: "grey",
+          shadowOffset: { height: 20, width: -20 }, // negative for the reverse of axis like the two plane charts
+          shadowOpacity: 1,
+          // for Android single property; as the android doesn't provides much control over the shadows color and opacity.
+          elevation: 30
         }}
       />
     </View>
