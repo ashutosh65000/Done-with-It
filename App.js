@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 
@@ -15,31 +15,21 @@ export default function App() {
         alignItems: "center"
       }}
     >
-      <View
+      <Text
         style={{
-          backgroundColor: "red",
-          width: 100,
-          height: 100,
+          fontSize: 30,
+          fontFamily: "Roboto",
+          fontStyle: "italic",
+          fontWeight: 200,
+          textTransform: "uppercase",
+          lineHeight: 30,
+          color: "nebula",
+          textAlign: "center"
         }}
       >
-        <View
-          style={{
-            backgroundColor: "green",
-            width: 50,
-            height: 50,
-            paddingHorizontal: 20,
-            paddingTop: 20
-          }}
-        ></View>
-      </View>
-      <View
-        style={{
-          backgroundColor: "magenta",
-          width: 100,
-          height: 100,
-          margin: 20
-        }}
-      ></View>
+        I love React Native! My name is Ashutosh Srivastava and I am a software developer, i have learnt quite a few technologies
+        during lockdown due to pandemic COVID-19.
+      </Text>
     </View>
   )
 }
