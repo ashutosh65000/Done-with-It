@@ -3,6 +3,7 @@ import { Text, View } from 'react-native';
 import WelcomeScreen from './app/screens/WelcomeScreen';
 import ViewImageScreen from './app/screens/ViewImageScreen';
 
+import AppText from "./app/components/AppText";
 
 export default function App() {
   // return (<WelcomeScreen />)
@@ -15,21 +16,7 @@ export default function App() {
         alignItems: "center"
       }}
     >
-      <Text
-        style={{
-          fontSize: 30,
-          fontFamily: "Roboto",
-          fontStyle: "italic",
-          fontWeight: 200,
-          textTransform: "uppercase",
-          lineHeight: 30,
-          color: "nebula",
-          textAlign: "center"
-        }}
-      >
-        I love React Native! My name is Ashutosh Srivastava and I am a software developer, i have learnt quite a few technologies
-        during lockdown due to pandemic COVID-19.
-      </Text>
+      <AppText>I love React Native!</AppText>
     </View>
   )
 }
